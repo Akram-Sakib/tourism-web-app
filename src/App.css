@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Reey-Regular';
+    src:  url('./Font/Reey-Regular.ttf.woff') format('woff'),
+    url('./Font/Reey-Regular.ttf.svg#Reey-Regular') format('svg'),
+    url('./Font/Reey-Regular.ttf.eot');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+	font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #545454;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a{
+	text-decoration: none;
+	color: #eee;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root{
+    --thm-font: 'DM Sans', sans-serif;
+    --thm-reey-font: 'Reey-Regular';
+    --thm-gray: #787780;
+    --thm-gray-rgb: 120, 119, 128;
+    --thm-primary: #e8604c;
+    --thm-primary-rgb: 232, 96, 76;
+    --thm-black: #313041;
+    --thm-black-rgb: 49, 48, 65;
+    --thm-base: #ffffff;
+    --thm-base-rgb: 255, 255, 255;
+    --thm-clr-extra: #e3e3e3;
+    --thm-border-radius: 8px;
+    --thm-letter-spacing: -0.02em;
 }
