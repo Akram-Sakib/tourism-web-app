@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./Pages/Shared/Header/Header";
-import Slider from "./Pages/Slider/Slider";
+import Header from "./Components/Shared/Header/Header";
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
@@ -10,7 +10,14 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Slider/>} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Home/>
+              </>
+            }
+          />
         </Routes>
       </Router>
     </>

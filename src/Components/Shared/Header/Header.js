@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Col, Row } from "react-bootstrap";
 import "./Header.css";
 
+
 const Header = () => {
 
   const [isActive, setActive] = useState(false);
@@ -19,11 +20,11 @@ const Header = () => {
             <Col md={7}>
               <div className="d-flex h-100 align-items-center">
                 <div className="phone_left">
-                  <i class="fas fa-phone"></i>
+                  <i className="fas fa-phone"></i>
                   <span>+ 92 666 999 0000</span>
                 </div>
                 <div className="mail_right">
-                  <i class="fas fa-at"></i>
+                  <i className="fas fa-at"></i>
                   <span>needhelp@company.com</span>
                 </div>
               </div>
@@ -31,10 +32,10 @@ const Header = () => {
             <Col md={5}>
               <div className="d-flex h-100 align-items-center">
                 <div className="social_top">
-                  <i class="fab fa-facebook"></i>
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-instagram"></i>
-                  <i class="fab fa-dribbble"></i>
+                  <i className="fab fa-facebook"></i>
+                  <i className="fab fa-twitter"></i>
+                  <i className="fab fa-instagram"></i>
+                  <i className="fab fa-dribbble"></i>
                 </div>
                 <div className="guider">
                   <span>BECOME A LOCAL GUIDE</span>

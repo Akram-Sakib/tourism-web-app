@@ -1,0 +1,135 @@
+.places_section {
+  padding: 160px 0 100px 0;
+}
+.places_top_text span {
+  display: block;
+  color: var(--thm-primary);
+  font-size: 20px;
+  align-items: center;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: var(--thm-reey-font);
+}
+.places_top_text h2 {
+  margin: 0;
+  font-weight: 700;
+  color: var(--thm-black);
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  margin-bottom: 60px;
+}
+
+
+/* IMAGE GALLERY */
+.image_gallery{
+  width: 100%;
+  height: 100%;
+}
+.place-img {
+  position: relative;
+  padding: 0 40px 0 60px;
+  height: 285px;
+   width: 100%;
+}
+.place-img::before{
+  content: "";
+	position: absolute;
+	top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .5s;
+  background: rgba(0, 0, 0, 0.5);
+  transform: scale(1, 0);
+  transition: transform 500ms ease;
+  transform-origin: top center;
+}
+.place-img:hover::before{
+    transform: scale(1, 1);
+    transform-origin: bottom center;
+}
+.place-img h2 {
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: var(--thm-letter-spacing);
+    z-index: 1;
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    transition: .5s;
+}
+.place-img h2:hover{
+  color: var(--thm-primary);
+}
+.place_img_subtitle {
+    font-size: 20px;
+    color: var(--thm-primary);
+    
+    font-family: var(--thm-reey-font);
+    margin: 0;
+    line-height: 30px;
+    letter-spacing: var(--thm-letter-spacing);
+    position: absolute;
+    z-index: 1;
+    bottom: 75px;
+}
+.place-img button{
+    position: absolute;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--thm-base);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: var(--thm-primary);
+    display: inline-block;
+    border-radius: var(--thm-border-radius);
+    padding: 0 15px 0;
+    border:none;
+    transition: all 500ms ease;
+    top: 16px;
+    right: 15px;
+    transform: scaleX(0);
+}
+.place-img:hover button{
+  transform: scaleX(1);
+}
+ .place-image-1{
+   background:url(./../../images/places/destination-1-1.png);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   transition: .5s;
+ }
+ .place-image-2{
+   background:url(./../../images/places/destination-1-2.png);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   transition: .5s;
+  }
+  .place-image-3{
+    background:url(./../../images/places/destination-1-3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .5s;
+  }
+  .place-image-4{
+   background:url(./../../images/places/destination-1-4.png);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   transition: .5s;
+ }
+  .place-image-5{
+   background:url(./../../images/places/destination-1-5.png);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   transition: .5s;
+ }
+
+ .place-image-1:hover,.place-image-2:hover,.place-image-3:hover,.place-image-4:hover,.place-image-5:hover{
+   background-size: 105% 105%;
+ }

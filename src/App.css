@@ -17,7 +17,6 @@
 
 html{
 	font-family: 'DM Sans', sans-serif;
-    font-size: 10px;
     line-height: 1.5;
     color: #545454;
 }
@@ -29,6 +28,10 @@ a{
 	text-decoration: none;
 	color: #eee;
 }
+a:hover{
+    color: var(--thm-primary);
+}
+p{font-size: 18px;}
 
 :root{
     --thm-font: 'DM Sans', sans-serif;
@@ -44,4 +47,47 @@ a{
     --thm-clr-extra: #e3e3e3;
     --thm-border-radius: 8px;
     --thm-letter-spacing: -0.02em;
+}
+
+.thm-btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border: none;
+    outline: none !important;
+    background-color: var(--thm-primary);
+    color: var(--thm-base);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 30px 8px;
+    border-radius: 8px;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    letter-spacing: 0.1em;
+    z-index: 1;
+}
+.thm-btn::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    
+    background-color: var(--thm-black);
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .5s;
+    transition-property: all;
+    opacity: 1;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: scaleY(0);
+    z-index: -1;
+}
+.thm-btn:hover:after {
+    opacity: 1;
+    transform: scaleY(1.0);
 }
