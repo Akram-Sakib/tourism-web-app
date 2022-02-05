@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Col, Row } from "react-bootstrap";
-import "./Header.css";
+// import "./Header.css";
 
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    {/* <header>
       <div className="header_top d-sm-none d-md-block">
         <div className="container">
           <Row>
@@ -86,7 +86,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </header> */}
   );
 };
 

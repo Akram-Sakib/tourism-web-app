@@ -1,0 +1,44 @@
+.brand_section{
+    position: relative;
+    display: block;
+    background-color: var(--thm-primary);
+    padding: 96px 0;
+    z-index: 1;
+}
+.brand_bg_shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.05;
+    z-index: -1;
+    background-image: url(./../../images/brand-one-shape.png);
+}
+
+.brand_section_title{
+    position: relative;
+    display: block;
+    padding: 25px 0 13px;
+}
+.brand_section_title h2{
+    font-size: 30px;
+    color: var(--thm-base);
+    font-weight: 400;
+    line-height: 40px;
+    font-family: var(--thm-reey-font);
+}
+.brand_main_content{}
+.brand_main_content img{
+    transition: 500ms;
+    opacity: 0.5;
+    max-width: 100%;
+}
+.brand_main_content .swiper-slide img:hover {
+    opacity: 1;
+}
+
+/* RESPONSIVE BRANDS */
