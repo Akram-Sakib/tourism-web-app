@@ -1,7 +1,10 @@
 import React from "react";
 import "./Tours.css";
 import { Col, Row } from "react-bootstrap";
+import popularImg1 from "./../../images/Popular-tours/popular-tours__img-1.jpg";
 import popularImg2 from "./../../images/Popular-tours/popular-tours__img-2.jpg";
+import popularImg3 from "./../../images/Popular-tours/popular-tours__img-3.jpg";
+import popularImg4 from "./../../images/Popular-tours/popular-tours__img-4.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
 
@@ -111,7 +114,7 @@ const Tours = () => {
               <Col md={3}>
                 <div className="popular_tours_single">
                   <div className="popular_tours_img">
-                    <img src={popularImg2} alt="" />
+                    <img src={popularImg1} alt="" />
                     <div className="popular_tours_icon">
                       <a href="/icon">
                         <i class="fas fa-heart"></i>
@@ -185,7 +188,7 @@ const Tours = () => {
               <Col md={3}>
                 <div className="popular_tours_single">
                   <div className="popular_tours_img">
-                    <img src={popularImg2} alt="" />
+                    <img src={popularImg3} alt="" />
                     <div className="popular_tours_icon">
                       <a href="/icon">
                         <i class="fas fa-heart"></i>
@@ -222,7 +225,7 @@ const Tours = () => {
               <Col md={3}>
                 <div className="popular_tours_single">
                   <div className="popular_tours_img">
-                    <img src={popularImg2} alt="" />
+                    <img src={popularImg4} alt="" />
                     <div className="popular_tours_icon">
                       <a href="/icon">
                         <i class="fas fa-heart"></i>

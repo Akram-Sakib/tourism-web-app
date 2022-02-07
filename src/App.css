@@ -1,100 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 @font-face {
-  font-family: 'Reey-Regular';
-    src:  url('./Font/Reey-Regular.ttf.woff') format('woff'),
-    url('./Font/Reey-Regular.ttf.svg#Reey-Regular') format('svg'),
-    url('./Font/Reey-Regular.ttf.eot');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Reey-Regular";
+  src: url("./Font/Reey-Regular.ttf.woff") format("woff"),
+    url("./Font/Reey-Regular.ttf.svg#Reey-Regular") format("svg"),
+    url("./Font/Reey-Regular.ttf.eot");
+  font-weight: normal;
+  font-style: normal;
 }
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-	font-family: 'DM Sans', sans-serif;
-    line-height: 1.5;
-    color: #545454;
+html {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.5;
+  color: #545454;
 }
-body{
-    font-family: 'DM Sans', sans-serif;
-    overflow-x: hidden;
-    line-height: 34px;
+body {
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+  line-height: 34px;
 }
 
-a{
-	text-decoration: none;
-	color: #eee;
+a {
+  text-decoration: none;
+  color: #eee;
 }
-a:hover{
-    color: var(--thm-primary);
+a:hover {
+  color: var(--thm-primary);
 }
-p{font-size: 18px;}
-ul{list-style: none;}
+p {
+  font-size: 18px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 .clearfix::after {
-    display: block;
-    clear: both;
-    content: "";
+  display: block;
+  clear: both;
+  content: "";
 }
-:root{
-    --thm-font: 'DM Sans', sans-serif;
-    --thm-reey-font: 'Reey-Regular';
-    --thm-gray: #787780;
-    --thm-gray-rgb: 120, 119, 128;
-    --thm-primary: #e8604c;
-    --thm-primary-rgb: 232, 96, 76;
-    --thm-black: #313041;
-    --thm-black-rgb: 49, 48, 65;
-    --thm-base: #ffffff;
-    --thm-base-rgb: 255, 255, 255;
-    --thm-clr-extra: #e3e3e3;
-    --thm-border-radius: 8px;
-    --thm-letter-spacing: -0.02em;
+:root {
+  --thm-font: "DM Sans", sans-serif;
+  --thm-reey-font: "Reey-Regular";
+  --thm-gray: #787780;
+  --thm-gray-rgb: 120, 119, 128;
+  --thm-primary: #e8604c;
+  --thm-primary-rgb: 232, 96, 76;
+  --thm-black: #313041;
+  --thm-black-rgb: 49, 48, 65;
+  --thm-base: #ffffff;
+  --thm-base-rgb: 255, 255, 255;
+  --thm-clr-extra: #e3e3e3;
+  --thm-border-radius: 8px;
+  --thm-letter-spacing: -0.02em;
 }
 
 .thm-btn {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-appearance: none;
-    border: none;
-    outline: none !important;
-    background-color: var(--thm-primary);
-    color: var(--thm-base);
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 8px 30px 8px;
-    border-radius: 8px;
-    transition: all 0.3s linear;
-    overflow: hidden;
-    letter-spacing: 0.1em;
-    z-index: 1;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border: none;
+  outline: none !important;
+  background-color: var(--thm-primary);
+  color: var(--thm-base);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 30px 8px;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+  z-index: 1;
 }
-.thm-btn::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    
-    background-color: var(--thm-black);
-    transition-delay: .1s;
-    transition-timing-function: ease-in-out;
-    transition-duration: .5s;
-    transition-property: all;
-    opacity: 1;
-    transform-origin: bottom;
-    transform-style: preserve-3d;
-    transform: scaleY(0);
-    z-index: -1;
+.thm-btn::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+
+  background-color: var(--thm-black);
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  z-index: -1;
 }
 .thm-btn:hover:after {
-    opacity: 1;
-    transform: scaleY(1.0);
+  opacity: 1;
+  transform: scaleY(1);
 }

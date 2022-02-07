@@ -64,6 +64,9 @@
   color: #a9a8b6;
   transition: all 500ms ease;
 }
+.footer_widget_about_contact li .text a:hover {
+    color: var(--thm-primary);
+}
 .footer_widget_about_contact li a {
 }
 .footer_widget_about_contact li a i {
@@ -86,6 +89,7 @@
   display: block;
   padding-left: 0;
 }
+
 .footer_widget_company_list li + li {
   margin-top: 5px;
 }
@@ -97,6 +101,28 @@
   color: #a9a8b6;
   transition: all 500ms ease;
 }
+.footer_widget_company_list li a:hover, .footer_widget_explore_list li a:hover {
+    padding-left: 20px;
+    color: var(--thm-base);
+}
+.footer_widget_company_list li a:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    width: 10px;
+    height: 2px;
+    content: "";
+    background-color: var(--thm-primary);
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 500ms ease;
+}
+
+.footer_widget_company_list li a:hover:before, .footer_widget_explore_list li a:hover:before{
+    opacity: 1;
+}
+
 .footer_widget_explore_list {
   position: relative;
   display: block;
@@ -159,6 +185,8 @@
   outline: none;
   text-align: center;
   padding: 0 30px;
+  font-family: inherit;
+  line-height: inherit;
 }
 .footer_widget_newsletter_input_box button {
   position: relative;
@@ -273,6 +301,14 @@
   transform-style: preserve-3d;
   transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.52);
   z-index: -1;
+}
+.footer_widget_social a:hover {
+    color: var(--thm-base);
+    transform: rotate(360deg);
+}
+
+.footer_widget_social a:hover:before {
+    transform: scaleX(1.0);
 }
 .footer_widget_social a i {
 }

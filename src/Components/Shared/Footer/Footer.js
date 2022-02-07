@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { Col, Container, Row } from "react-bootstrap";
 import upArrow from "./../../../images/4icon/up-arrow.png";
+import logo from "./../../../images/logo-1.png";
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
                 <div className="footer_widget_column footer_widget_about">
                   <div className="footer_widget_about_logo">
                     <a href="#/" className="img">
-                      <img src="" alt="" />
+                      <img src={logo} alt="" />
                     </a>
                   </div>
                   <p className="footer_widget_about_text">
@@ -104,7 +105,7 @@ const Footer = () => {
                   <h3 className="footer_widget_title">Newsletter</h3>
                   <form action="" className="footer_widget_newsletter_form">
                     <div className="footer_widget_newsletter_input_box">
-                      <input type="email" />
+                      <input type="email" placeholder="Email Address" />
                       <button type="submit">Subscribe</button>
                     </div>
                   </form>

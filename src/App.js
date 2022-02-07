@@ -3,20 +3,27 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Shared/Footer/Footer";
-import Navbar from "./Components/Shared/Navbar/Navbar";
+import Header from "./Components/Shared/Header/Header";
+import MobileNav from "./Components/MobileNav/MobileNav";
+import LoginPage from "./Pages/LoginPage/LoginPage";
 
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <Header />
+        <MobileNav/>
         <Routes>
           <Route
             path="/"
             element={
-              <>
                 <Home/>
-              </>
+            }
+          />
+          <Route
+            path="/login"
+            element={
+                <LoginPage/>
             }
           />
         </Routes>

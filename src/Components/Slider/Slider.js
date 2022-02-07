@@ -20,9 +20,9 @@ const Slider = () => {
   const [isVisible, setVisibility] = useState(false);
   const [startDate, setStartDate] = useState(new Date());
 
-
   return (
     <div className="slider-section">
+    
       <Swiper
         effect={"fade"}
         modules={[Navigation, Pagination, EffectFade, Autoplay]}
@@ -53,7 +53,7 @@ const Slider = () => {
             <div className="text-center">
               <h1
                 className={
-                  !isVisible ? "animate__animated animate__fadeInDown" : "animate__animated animate__fadeInDown"
+                  !isVisible ? "animate__animated animate__fadeInDown" : "animate__animated"
                 }
               >
                 Travel &amp; Adventures
